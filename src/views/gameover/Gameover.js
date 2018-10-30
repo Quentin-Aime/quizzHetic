@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Gameover = ( { gameoverName } ) => (
-  <section>
-    <h1>Gameover</h1>
-  </section>
+const Category = ({ categoryName }) => (
+	<section>
+		<h1>Category : {categoryName}</h1>
+	</section>
 );
 
-Gameover.propTypes = {
-  gameoverName: PropTypes.string.isRequired,
+Category.PropTypes = {
+	categoryName: PropTypes.string.isRequired,
 }
 
-export default Gameover
+export default Category;
